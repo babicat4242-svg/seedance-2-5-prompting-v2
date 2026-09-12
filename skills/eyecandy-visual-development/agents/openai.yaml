@@ -1,0 +1,4 @@
+interface:
+  display_name: "EYECANDY 비주얼 디벨롭먼트"
+  short_description: "장면 의도 분석 → eyecannndy.com 기법 선택 → 카메라·블로킹·스케일·트랜지션 연출 규칙 변환"
+  default_prompt: "Use $eyecandy-visual-development to analyze this scene's intent and convert it into an EYECANDY-technique-based direction with storyboard translation."
