@@ -7,7 +7,7 @@
 - 기본 2.5 스킬의 문자 수·수정 계약 테스트: **9 passed**.
 - EyeCandy 기술·분류 계약 검사: **706/706 passed**.
 - 포함한 세 스킬의 `skill-creator` 구조 검사: 모두 통과.
-- 스킬의 내부 Markdown 링크 **60개**가 묶음 안에서 해석됨.
+- 스킬의 내부 Markdown 링크 **62개**가 묶음 안에서 해석됨.
 - 배포 스킬 본문에 개인 PC 절대 경로가 남아 있지 않음.
 - 원본 강의 ZIP/PDF/이미지/영상과 임시 실행 산출물은 배포에 미포함.
 
@@ -31,3 +31,7 @@
 python -m pytest skills/seedance-2-5-prompting/tests -q
 python skills/eyecandy-visual-development/tests/test_technique_contract.py
 ```
+
+## 2.0.1 길이 통합 점검
+
+20초 원샷과 정확한 참조 태그, 이미지 기반 10초 한국어 고정 숏, 같은 구성의 15초 재작성, 총 25초를 보존하는 명시적 분할 사례를 확인했습니다. 시간 때문에 Fast로 바꾸거나 고정 10초 단위를 강제하지 않습니다.
