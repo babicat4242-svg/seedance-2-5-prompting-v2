@@ -1,8 +1,8 @@
 # Seedance 2.5 Prompting v2
 
-스토리·이미지를 읽고 장면, 카메라, 연기, 음향을 씨댄스 2.5용 전체 프롬프트로 작성하는 개인 배포용 Codex 스킬 묶음입니다. **v2 / 2.0.0은 이 스킬 묶음의 버전**이며, 대상 영상 모델은 Seedance 2.5입니다.
+스토리·이미지를 읽고 장면, 카메라, 연기, 음향을 씨댄스 2.5용 전체 프롬프트로 작성하는 배포용 Codex 스킬 묶음입니다. **v2 / 2.0.0은 이 스킬 묶음의 버전**이며, 대상 영상 모델은 Seedance 2.5입니다.
 
-기존 `seedance-2-5-prompting` 공개 저장소와 분리한 비공개 저장소입니다. 저장소 접근 권한을 받은 GitHub 계정으로 이용합니다.
+기존 `seedance-2-5-prompting` 저장소와 분리한 독립 v2 공개 저장소입니다. 로그인이나 초대 없이 열람하고 내려받을 수 있습니다.
 
 ## 포함된 스킬
 
@@ -29,14 +29,13 @@ GODSTOUCH 액션 카메라, NO-BGM, 스토리·이미지 해석, 2.5 작성법 5
 
 ## 설치
 
-1. GitHub에서 이 비공개 저장소의 초대를 수락합니다.
-2. 접근 권한이 있는 계정으로 저장소를 내려받습니다. GitHub CLI를 사용한다면:
+1. GitHub에서 ZIP으로 내려받거나 Git으로 복제합니다:
 
    ```bash
-   gh repo clone babicat4242-svg/seedance-2-5-prompting-v2
+   git clone https://github.com/babicat4242-svg/seedance-2-5-prompting-v2.git
    ```
 
-3. `skills` 안의 세 폴더를 사용 중인 Codex의 개인 스킬 디렉터리에 나란히 복사합니다. 이 묶음에서 사용하는 기본 위치는 Windows의 `%USERPROFILE%/.codex/skills`, macOS/Linux의 `~/.codex/skills`입니다. 이미 같은 이름의 스킬이 있으면 해당 폴더를 백업한 뒤 교체합니다.
+2. `skills` 안의 세 폴더를 사용 중인 Codex의 개인 스킬 디렉터리에 나란히 복사합니다. 이 묶음에서 사용하는 기본 위치는 Windows의 `%USERPROFILE%/.codex/skills`, macOS/Linux의 `~/.codex/skills`입니다. 이미 같은 이름의 스킬이 있으면 해당 폴더를 백업한 뒤 교체합니다.
 
 설치 후 디렉터리 구조:
 
