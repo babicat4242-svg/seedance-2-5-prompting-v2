@@ -19,7 +19,7 @@ Camera wording is a **prompting vocabulary and compiler heuristic**, not a promi
 
 ## Camera instruction schema
 
-Use one ordered clause chain for each beat:
+Use the following chain as a completeness check across shared shot rules and beat-specific changes. State unchanged fields once per continuous shot; fixed framing needs no invented travel path or travel speed:
 
 ```text
 purpose → start framing → primary move → path/direction → speed profile
@@ -224,7 +224,7 @@ Name one dominant move before adding a secondary move. Describe a beat's contigu
 - **Required fields:** Fixed framing; subject blocking; focus rule; allowed edit point; end framing.
 - **Stable relationship:** The frame stays stable while action enters, exits, or changes within it.
 - **Compatible with:** Rack focus, static staging, and subject action within the fixed frame.
-- **Hard-lock wording:** State stable position/orientation/focal length first, then enumerate relevant alternative translations, rotations, zooms, and rig drift once when the lock is critical or needs repair. Keep focus, playback speed, and editing in separate constraints; locked-off alone does not forbid requested rack focus or slow-motion playback. See the [positive-first camera example](seedance-25-writing-rules.md).
+- **Hard-lock wording:** State stable position/orientation/focal length first; use a concise fixed-frame constraint for a fresh shot. Enumerate only relevant alternative translations, rotations, zooms, and rig drift once for a user-requested detailed restriction or an observed failure. Keep focus, playback speed, and editing in separate constraints; locked-off alone does not forbid requested rack focus or slow-motion playback. See the [positive-first camera example](seedance-25-writing-rules.md).
 - **Conflicts with:** Orbit, pan, tilt, truck, pedestal, crane, handheld, gimbal drift, and optical zoom; describe optical zoom as a separate fixed-position optical-zoom shot, not locked-off.
 - **Seedance-ready phrase:** `Locked-off wide shot of the doorway; actors cross within the frame, fixed focus on the threshold, no camera movement, cut only after they exit.`
 
@@ -397,7 +397,7 @@ Do not copy a camera-word list into the prompt. Select one dominant move per bea
 
 ## Quick phrase library
 
-Use these as copy-ready direction. They describe intent; exact degrees, speeds, focal lengths, and frame timing are not guaranteed unless the current interface or an uploaded reference exposes them.
+Use only phrases relevant to the selected scene direction, not the whole library. They describe intent; exact degrees, speeds, focal lengths, and frame timing are not guaranteed unless the current interface or an uploaded reference exposes them.
 
 | Korean phrase | Concise English camera terminology | Use |
 | --- | --- | --- |

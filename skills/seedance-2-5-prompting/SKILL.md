@@ -13,10 +13,20 @@ Treat a Seedance 2.5 or explicit Seedance 2.0 Fast prompt as a compact director'
 
 Use this skill for Seedance 2.5, the latest/current Seedance, an unspecified Seedance prompt, or a request that explicitly names Seedance 2.0 Fast. For explicit Seedance 2.0 Fast, select the custom Fast profile below. Treat that profile as a local authoring convention, not a public or official model specification. Route every other explicit Seedance 2.0 or legacy request to the 2.0 skill; duration alone never selects Fast. If the version is genuinely ambiguous and changes the prompt materially, state the 2.5 assumption once and proceed.
 
+## Select instructions for this scene
+
+Before loading optional directing references, identify the scene's primary purpose from the actual story/images or current active brief. Keep the latest explicit user choices and assigned reference locks, then select details that make the required action physically possible, express the intended emotion or composition, establish the allowed audio, or protect meaningful continuity. Use the scene-selection pass in the writing-rules reference; an applicable guide is a toolbox, not a list to paste in full.
+
+For each added clause, ask: would removing it materially change the scene's key action, emotion, composition, allowed audio, or important continuity? Keep it if yes; otherwise omit decorative detail, duplicate locks, and unrelated technique or negative lists. Preserve explicit user choices even when elaborate: selection simplifies wording, not the requested scene. Keep necessary causal action and camera geometry in complex scenes; there is no fixed quota of techniques or acting cues.
+
+State shared, unchanged camera and continuity rules once per continuous shot, then write only beat-specific changes. A simple scene still needs the complete functional brief, but it need not fill every camera field repeatedly or reach a target length. Keep this selection process internal rather than adding a planning table or score to the output.
+
+For revisions, build the canonical active brief first and apply selection only to changed layers and their dependencies. Preserve unrelated direction. After an observed failure, strengthen the affected constraint from the first attempt and return a complete replacement; do not preemptively load every repair exclusion into a fresh prompt.
+
 ## Load references selectively
 
 - For music videos, performance, dance, or instrumental prompts of any requested duration, read [references/music-video-direction.md](references/music-video-direction.md). Duration is a setting in this main skill, not a reason to select a separate 10-second or 30-second skill. Preserve the user's exact duration, tags, language, and cut policy.
-- For Seedance 2.5 prompt creation or repair, read [references/seedance-25-writing-rules.md](references/seedance-25-writing-rules.md). Apply its event-first structure, reference boundaries, lens/movement wording, positive-first constraints, observable acting, and submission checks. These are user-supplied authoring conventions; preserve explicit scene choices.
+- For Seedance 2.5 prompt creation or repair, read [references/seedance-25-writing-rules.md](references/seedance-25-writing-rules.md). Apply its scene-selection pass and relevant event, reference, camera, acting, audio, and submission rules; do not copy every example into each prompt. These are user-supplied authoring conventions; preserve explicit scene choices.
 - For new Seedance 2.5 scene/prompt creation from a story, supplied images, or both, first read [references/story-image-scene-brief.md](references/story-image-scene-brief.md). Inspect the actual inputs, build a fitting scene, then choose camera direction. Story-only requests need no invented references; image-only requests need visual inspection; combined inputs use explicit story/image roles. Return a complete prompt, not only an input analysis or technique list.
 - For Seedance 2.5 fights, chases, mecha, impacts, action reveals, continuous action one-shots, or an explicit GODSTOUCH request, read [references/godstouch-action-camera.md](references/godstouch-action-camera.md). Use its scene-specific camera candidates, event-motivated movement, and action timing after checking scene fit with EyeCandy. Distinguish true no-cut paths from hidden-cut fake oners; preserve the user's camera, duration, audio, and ending choices.
 - When a Seedance 2.5 prompt needs scene-appropriate camera motion, framing, blocking, or transition selection, read [references/eyecandy-camera-direction.md](references/eyecandy-camera-direction.md) and use `eyecandy-visual-development`, even if the user did not name EyeCandy. Choose for the scene's intent and geometry; retain fixed framing or plain coverage when that serves the scene. Preserve already specified camera choices and skip reselection for unrelated edits.
@@ -34,18 +44,18 @@ Use this skill for Seedance 2.5, the latest/current Seedance, an unspecified See
 1. Identify the profile first: Seedance 2.5 or explicit Seedance 2.0 Fast. For a new 2.5 scene, understand the story/images using the input reference before choosing the mode: T2V, I2V, R2V, white-model transfer, extension, or localized edit. Read images rather than inferring their contents from filenames.
 2. Declare the deliverable: duration, aspect/output intent, single-shot or multi-shot, audio mode, and final-frame purpose.
 3. Build an asset-role map. Give every reference one primary role, permitted secondary role if needed, and priority for conflicts.
-4. List non-negotiables: identity, product geometry, layout, action order, eyeline, light direction, screen direction, or audio sync.
+4. Preserve the actual non-negotiables and select supporting instructions for the scene purpose. Identity, geometry, layout, action order, eyeline, light, screen direction, and audio sync are candidates when relevant, not mandatory additions to every scene.
 5. Divide the duration into readable beats. Prefer 6–8-second narrative beats; reserve 3–4 seconds for resolution and use finer timing only for action or synchronization.
-6. Compile a camera direction for every beat. For 2.5, use the EyeCandy scene-selection reference when the camera choice is open or needs repair; translate the selected direction into the camera compiler below, including a deliberate static shot when appropriate.
-7. Write observable subject action and physical state separately from camera movement. Use a few body-part/action/count or speed cues for a reaction, and order contact, force, and object response from the actual starting state.
+6. Compile a coherent camera direction across the beats; state shared shot rules once and write changes where they occur. For 2.5, use the EyeCandy scene-selection reference when the camera choice is open or needs repair; translate the selected direction into the camera compiler below, including a deliberate static shot when appropriate.
+7. Write observable subject action and physical state separately from camera movement. Use the minimum meaningful body-part/action/count or speed cues for a reaction; one readable response can be enough. Order contact, force, and object response from the actual starting state.
 8. Add lighting, atmosphere, audio, and output intent only when they affect the shot.
-9. State desired outcomes positively first. Add exclusions for active hard constraints, with camera, focus, playback, editing, and audio treated separately; scan positive and negative clauses for unwanted specific sound cues.
+9. State desired outcomes positively first. Use concise exclusions for active hard constraints; expand only relevant alternatives for an explicit detailed restriction or observed failure. Treat camera, focus, playback, editing, and audio separately; scan positive and negative clauses for unwanted specific sound cues.
 10. Draft the copy-ready prompt in the requested language, measure its exact character count, and apply the language fallback below when required.
 11. Validate, then return the final bounded prompt.
 
 ## Camera compiler
 
-For every important beat, state: narrative purpose; start framing; one primary move; path/direction; speed profile; subject blocking; lens/focus; end framing; and continuity or edit behavior. Keep translation, aim rotation, lens, focus, rig behavior, and subject motion in separate clauses.
+Use these fields to check that each important beat is understandable: narrative purpose; start framing; one primary move; path/direction; speed profile; subject blocking; lens/focus; end framing; and continuity or edit behavior. Supply relevant values through shared shot rules plus beat-specific changes; do not repeat unchanged fields or invent irrelevant travel/speed for a locked shot. Keep translation, aim rotation, lens, focus, rig behavior, and subject motion in separate clauses.
 
 ```text
 purpose → start framing → primary move → path/direction → speed → subject blocking → lens/focus → end framing → continuity/edit
@@ -133,4 +143,4 @@ Before returning, verify that the prompt contains:
 - For a revision, one complete replacement prompt compiled from the canonical active brief, with every superseded value and dependency absent.
 - The exact active timecode-range set preserved during an over-limit rewrite; if the latest request explicitly retimed or reordered the scene, only the new range set remains.
 
-Remove unsupported absolutes, pseudo-controls, conflicting moves, accidental cuts, and unassigned reference inheritance. Confirm that any one-shot route is physically contiguous and that every permitted edit has an explicit boundary.
+Run the deletion check against the scene purpose: retain explicit choices and necessary causal/continuity detail; remove duplicate or decorative instructions that do not support the result. Remove unsupported absolutes, pseudo-controls, conflicting moves, accidental cuts, and unassigned reference inheritance. Confirm that any one-shot route is physically contiguous and that every permitted edit has an explicit boundary.

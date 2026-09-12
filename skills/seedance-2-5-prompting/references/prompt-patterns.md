@@ -1,6 +1,6 @@
 # Seedance 2.5 Prompt Patterns
 
-Copy these structures, replace every brace-delimited variable, and retain the exact reference tags shown in the current UI. The declarations below name intended workflows; a visible control still determines whether a particular mode is selectable.
+Adapt only the structure appropriate to the scene using the main skill's instruction-selection pass. Resolve applicable brace-delimited variables; omit unused reference clauses and irrelevant optional fields instead of inventing assets, tags, or decorative detail. Retain the exact reference tags shown in the current UI. The declarations below name intended workflows; a visible control still determines whether a particular mode is selectable.
 
 ## Contents
 
@@ -29,14 +29,14 @@ mode/output → reference-role map → non-negotiables → scene/spatial rules
 
 For Seedance 2.5, place the focal-length intent and LOCKED OFF or primary move first in the final camera clause, then purpose/start/path/blocking/focus/end. In a source-preserving edit or extension, retain the reference perspective when the actual mm is unknown; do not invent a measured lens value. A continuous shot keeps one primary route by default; timeline phases may continue, slow, settle, or hold that route without adding a new move.
 
-Keep subject action and camera action in separate sentences. Duration, timestamps, angles, focal lengths, and speeds are approximate intent unless the current interface exposes a matching control or path reference.
+State shared camera and continuity rules once per continuous shot, with only changed values in individual beats. These templates are completeness checks, not instructions to repeat every field or lock. A locked shot needs stable framing and a focus rule, not a travel path or travel speed. Keep subject action and camera action in separate sentences. Duration, timestamps, angles, focal lengths, and speeds are approximate intent unless the current interface exposes a matching control or path reference.
 
 ## Community-derived compacting checks
 
 The community collection [awesome-seedance-2.5-api-prompts](https://github.com/Anil-matcha/awesome-seedance-2.5-api-prompts) provides a useful cross-check for concise ordering and timestamped shot scripts. Adapt its ideas without replacing this skill's full structure:
 
-- After mode and reference roles, front-load one compact core-scene sentence containing subject, observable action, environment, dominant camera intent, lighting/style, and the highest-risk constraint.
-- Within each timecode, keep the local order: shot size → subject action → primary camera move/path → focus or audio cue when relevant → readable end state.
+- After mode and actual reference roles, front-load the core scene: subject, observable action, and relevant setting/camera intent. Include lighting/style or a priority constraint only when needed, and do not duplicate details already stated clearly.
+- Within each timecode, order the relevant changes: subject action → camera/focus/audio changes when needed → readable end state. Shared shot size and unchanged camera fields need not repeat.
 - Treat @Image1, @Video1, and @Audio1 as authoring-role labels whose exact spelling must match the user's interface; never claim that the prose tag itself is an API field.
 - Use short standard motion terms only as the first pass. Compile every important move through [camera-motion.md](camera-motion.md) so orbit, tracking, rack focus, whip pan, crane, locked-off, gimbal, or FPV gains physical start/path/end behavior.
 
@@ -105,7 +105,7 @@ End state: {FINAL_FRAME}.
 Continuity locks: retain {IDENTITY_TAG}, {COSTUME_AND_PROP_LOCKS}, {TIME_OF_DAY}, {DIRECTION_OF_TRAVEL}, and {FOCUS_TARGET} through the resolution.
 ```
 
-Load [camera-motion.md](camera-motion.md) to compile each beat as purpose → framing → move → path → speed → blocking → focus → end frame → continuity, especially before combining moves.
+Load [camera-motion.md](camera-motion.md) to check relevant purpose/framing/move/path/speed/blocking/focus/end/continuity fields across the shared shot rules and beat-specific changes, especially before combining moves.
 
 ## Image-to-video pattern
 

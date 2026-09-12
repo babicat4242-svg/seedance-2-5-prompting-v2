@@ -20,9 +20,9 @@ When “silent” is accompanied by requested footsteps or dialogue, those sound
 
 ## NO-BGM compilation
 
-1. Place `NO BGM — no background music` in the audio block. When no music is a hard user requirement or a repair, declare it near duration/cut policy at the start and confirm `NO BGM throughout` at the end of the audio block.
+1. State the allowed mix and `NO BGM` once as the scene-wide audio contract. When it is a priority requirement, a short NO-BGM flag near duration/cut policy may reinforce the audio block. Do not also add a routine third confirmation at the end; repeat across shot boundaries only where scope would otherwise be unclear or an observed failure requires it.
 2. State what is audible positively using physical sources, materials, and action timing: shoes on wet concrete only while walking; canvas sleeve rustle; a latch click at closure; a stated breath. Include only sounds compatible with the user's allowed mix. For off-screen sounds, specify direction, distance, and change when they matter.
-3. Expand the unwanted broad musical forms once after the allowed mix. Preserve necessary exclusion concepts in the requested language; do not paste repeated long lists into every beat.
+3. For a fresh prompt, a clear allowed mix plus NO BGM normally suffices. Add only relevant broad musical exclusions when the user explicitly requests detailed restrictions or a failed result contains unwanted score/pad/other musical forms. Preserve required exclusions in the requested language; do not paste the expanded vocabulary or repeat lists in every beat.
 4. Scan every block, including negative clauses, using the sound-cue check below. Remove specific unwanted cues and their dependent timing; keep a requested physical appliance hum distinct from a forbidden musical tone bed.
 5. On revision, retire the old audio choice and dependent timing cues, then recompile the complete active brief. Count audio text within the same 5,000-character 2.5 budget or active Fast budget. Compress repetition before removing the selected mode or necessary exclusions.
 
@@ -36,13 +36,13 @@ This check adapts the user's [2.5 lesson](seedance-25-writing-rules.md). Treat r
 - Separate visual nouns from auditory instructions. A required bell tower may remain visible with a still bell, while the mix contains only footsteps. Do not remove the prop or location to eliminate an unwanted sound. Keep an explicitly supplied quote/tag verbatim when its content is required.
 - Recheck sound timing after action edits. If the action has been removed, retire its exclusive sound cue; if it remains visual in total silence, retain the action without audible foley.
 
-For a scene with no requested vocal music, this is the expanded working vocabulary:
+For detailed exclusions or repair in a scene with no requested vocal music, this is a vocabulary bank. Select relevant terms; do not paste the entire block by default:
 
 ```text
 Only the explicitly listed diegetic sounds and dialogue are audible. NO BGM — no background music of any kind: no score, soundtrack music, instrumental, underscore, ambient musical pad, musical drone, tone bed, swell, sting, humming, singing, whistling, or lyrics. NO BGM throughout.
 ```
 
-Supply the actual permitted sounds and dialogue; omit dialogue permission for a no-dialogue scene. Remove any exclusion that would suppress an explicitly permitted physical or vocal sound. This block excludes singing and is therefore not the a-cappella block. A requested vocal performance uses the separate contract below.
+The other mode examples below are also adaptable contracts, not mandatory lists: keep the chosen mode and meaningful source/permission boundaries while omitting redundant wording. Supply the actual permitted sounds and dialogue; omit dialogue permission for a no-dialogue scene. Remove any exclusion that would suppress an explicitly permitted physical or vocal sound. This block excludes singing and is therefore not the a-cappella block. A requested vocal performance uses the separate contract below.
 
 ## Complete silence
 
