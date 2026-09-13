@@ -15,6 +15,7 @@ description: 'Use when writing or revising Seedance 2.5 prompts with cinematic, 
 - 2.0 자료의 변환, 전체 영화 프롬프트 작성, 원샷·연장에는 [영화 연출 변환 가이드](references/film-direction-migration.md)의 해당 부분을 읽는다. 5블록 대응표, 역할 배정, 30초 원테이크 예시는 선택 자료이며 장면에 필요하지 않은 연출 지시까지 적용하지 않는다.
 - 장면에 맞는 카메라 모션·구도·블로킹·전환을 고를 때는 [아이캔디 연출 연결](../seedance-2-5-prompting/references/eyecandy-camera-direction.md)을 읽는다. 감정·인물 동작·공간·가독성을 기준으로 기법과 일반 촬영을 비교하고, 선택한 결과를 2.5 카메라 문장으로 작성한다. 고정 숏과 이미 정한 경로도 유효한 선택이다.
 - 액션·추격·메카·충격·등장 장면이나 해당 장면의 원샷에는 [GODSTOUCH 액션 카메라](../seedance-2-5-prompting/references/godstouch-action-camera.md)를 추가로 읽는다. 장면에 맞는 카메라 후보, 사건에 반응하는 이동, 접촉과 결과의 타이밍을 보강하고 숨은 컷을 실제 원샷과 구분한다.
+- 시각 효과·시간 정지·분신·공간 변형을 영화·광고·뮤직비디오 장면에 사용할 때는 [범용 효과 연출 연결](../seedance-2-5-prompting/references/visual-effects-direction.md)을 읽고 `video-effects`를 사용한다. 인물의 경험·제품 정보·퍼포먼스에 맞춰 효과의 시작·변화·끝을 풀어 쓰며, 효과가 필요 없는 장면에 자동으로 추가하지 않는다. 힉스필드 계정·프리셋은 필요하지 않다.
 - 이동 카메라는 [카메라 컴파일러](../seedance-2-5-prompting/references/camera-motion.md)를 사용한다.
 - BGM 금지·원치 않는 음악·완전 무음·첨부 오디오만·무반주 노래에는 [NO-BGM 가이드](../seedance-2-5-prompting/references/no-bgm.md)를 읽는다.
 - 기능·업로드·길이·출력 설정 질문은 기본 스킬의 모델·출처 참고자료와 현재 UI로 확인한다.

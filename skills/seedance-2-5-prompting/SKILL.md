@@ -1,6 +1,6 @@
 ---
 name: seedance-2-5-prompting
-description: Use when writing, reviewing, or repairing prompts for Seedance 2.5, 씨댄스 2.5, Seedance 2.0 Fast, 씨댄스 2.0 패스트, the latest Seedance workflow, 30-second generation, 15-second Fast generation, GODSTOUCH action/one-shot direction, R2V, white-model or green-screen references, localized video edits, multimodal reference packs, or camera-motion control; also use for version-unspecified current Seedance prompt requests, while other explicit Seedance 2.0 legacy requests stay on the 2.0 skill.
+description: Use when writing, reviewing, or repairing prompts for Seedance 2.5, 씨댄스 2.5, Seedance 2.0 Fast, 씨댄스 2.0 패스트, the latest Seedance workflow, 30-second generation, 15-second Fast generation, GODSTOUCH action/one-shot direction, R2V, white-model or green-screen references, localized video edits, multimodal reference packs, transferable visual effects for films, commercials and music videos, or camera-motion control; also use for version-unspecified current Seedance prompt requests, while other explicit Seedance 2.0 legacy requests stay on the 2.0 skill.
 ---
 
 # Seedance 2.5 Prompting
@@ -24,6 +24,8 @@ State shared, unchanged camera and continuity rules once per continuous shot, th
 For revisions, build the canonical active brief first and apply selection only to changed layers and their dependencies. Preserve unrelated direction. After an observed failure, strengthen the affected constraint from the first attempt and return a complete replacement; do not preemptively load every repair exclusion into a fresh prompt.
 
 ## Load references selectively
+
+- For visual effects, surreal transformations, time-freeze, clones, environment deformation, or effect-driven film, commercial, brand-film, and music-video scenes, read [references/visual-effects-direction.md](references/visual-effects-direction.md) and use `video-effects`. Transfer the visible mechanism into the scene without requiring Higgsfield or its presets. Select effects for the scene's purpose; preserve requested duration, exact tags, camera/cut policy, and audio.
 
 - For music videos, performance, dance, or instrumental prompts of any requested duration, read [references/music-video-direction.md](references/music-video-direction.md). Duration is a setting in this main skill, not a reason to select a separate 10-second or 30-second skill. Preserve the user's exact duration, tags, language, and cut policy.
 - For Seedance 2.5 prompt creation or repair, read [references/seedance-25-writing-rules.md](references/seedance-25-writing-rules.md). Apply its scene-selection pass and relevant event, reference, camera, acting, audio, and submission rules; do not copy every example into each prompt. These are user-supplied authoring conventions; preserve explicit scene choices.
