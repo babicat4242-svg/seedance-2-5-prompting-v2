@@ -1,0 +1,866 @@
+{
+  "checked_date": "2026-09-12",
+  "source": {
+    "catalog": "Higgsfield viral preset catalog, read-only list; pages 0 and 50; next_cursor null",
+    "url": "https://higgsfield.ai/effects",
+    "catalog_unique_count": 87,
+    "public_gallery_unique_count": 45
+  },
+  "included_count": 81,
+  "excluded_count": 6,
+  "scope": "그림·명화를 실제 인물로 재현하는 유형 제외. 그래픽·회화 질감은 유지. 이 목록은 확인일 스냅샷이며 플랫폼 전체의 영구 총개수가 아님.",
+  "items": [
+    {
+      "id": "fb6ca8f7-493e-42e6-9e0d-f3e2e695825d",
+      "name": "Floating fall",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#floating-fall",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "8b8d053d-08ff-436c-9767-315efe5f0cfc",
+      "name": "Vanish",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#vanish",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "a5e06af0-626e-4634-a523-76bf57c7b3a8",
+      "name": "Eyes in",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#eyes-in",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "dd509a98-fffe-4b30-915b-3fd93b31bbc9",
+      "name": "Cutout",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#cutout",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "23507548-cd71-423b-a5fd-0de1b0a09222",
+      "name": "Wild ride",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#wild-ride",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "af71aba0-66b8-42a2-a33d-d08aa7ec5836",
+      "name": "Lidar transition",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#lidar-transition",
+      "evidence": "official_preview_10_sampled_frames",
+      "source_url": "https://higgsfield.ai/effects/examples/lidar"
+    },
+    {
+      "id": "3e568b72-8d27-4b0d-a772-399137f18850",
+      "name": "Smash and grab",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#smash-and-grab",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/smash-and-grab"
+    },
+    {
+      "id": "ff501ca6-1d60-4ab4-8675-6273adfd977b",
+      "name": "Incline",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#incline",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "32650589-e3dc-48c7-b26d-c1116e3acf9d",
+      "name": "Clones",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#clones",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "6821208a-3078-4431-92df-8f2e46a833f4",
+      "name": "Infinite clones",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#infinite-clones",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/infinite-clones"
+    },
+    {
+      "id": "2e215b1a-7df1-4c96-a97a-baf611f7d38e",
+      "name": "Selfception",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#selfception",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "d43818b0-7c5c-4c19-a67c-2b38beb5367c",
+      "name": "Act natural",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#act-natural",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "ddb12fd4-5bbf-4bb1-800b-7d409f3066b5",
+      "name": "Monster dab",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#monster-dab",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/monster-dab"
+    },
+    {
+      "id": "c277871a-938b-4c09-b825-41c217e7f727",
+      "name": "Street colossus",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#street-colossus",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/street-colossus"
+    },
+    {
+      "id": "262d1281-9e6e-4530-b1b2-ce74f7a33df9",
+      "name": "World morphing",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#world-morphing",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "568a5b0d-f82d-4441-b833-a14c48a0d815",
+      "name": "Studio slide",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#studio-slide",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/studio-slide"
+    },
+    {
+      "id": "93a606f8-87cb-4fb0-98a8-694d08f9b319",
+      "name": "High flip",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#high-flip",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/high-flip"
+    },
+    {
+      "id": "7ca07da7-5471-48fa-80a7-97a29a7ec2bc",
+      "name": "Lacewalker",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#lacewalker",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/lacewalker"
+    },
+    {
+      "id": "acc07eb5-2d40-4ace-9789-48d5bf19639c",
+      "name": "Burning man",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#burning-man",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/burning-man"
+    },
+    {
+      "id": "bc0f007c-3319-405e-b1f4-341f65000e2b",
+      "name": "Melting",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#melting",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "eee3cd37-1072-428d-a921-a37c3735423c",
+      "name": "boarding pass",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#boarding-pass",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/boarding-pass"
+    },
+    {
+      "id": "6e822598-7221-4f89-9a7d-81bb812433d9",
+      "name": "Frozen in motion",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#frozen-in-motion",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/frozen-in-motion"
+    },
+    {
+      "id": "118138a4-5b5d-471e-a29f-69faa58aee5a",
+      "name": "Architecture wave",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#architecture-wave",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "4f46bb84-20f5-44d5-bee1-e1e2c0faa809",
+      "name": "Scrapbook collage",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#scrapbook-collage",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/scrapbook-collage"
+    },
+    {
+      "id": "8bca1173-5327-478c-b476-cbdfcaf001a3",
+      "name": "Stop world",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#stop-world",
+      "evidence": "official_preview_10_sampled_frames",
+      "source_url": "https://higgsfield.ai/effects/examples/stop-world"
+    },
+    {
+      "id": "81e45e83-caa5-4d06-a935-2ad776bf039f",
+      "name": "Agamemnon",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#agamemnon",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/agamemnon"
+    },
+    {
+      "id": "1ac7759b-5b1a-4523-bd77-b6bb5d6df84e",
+      "name": "Earth zoom",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#earth-zoom",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "aa5d78cc-00bf-466d-bb91-aff6ea79495c",
+      "name": "Ink Riot",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#ink-riot",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "463c5c9e-5980-46bd-a9be-ebb4b4a3add4",
+      "name": "Fallen angel",
+      "status": "excluded",
+      "public_gallery": true,
+      "reason": "사용자 요청: 그림을 인물로 재현하는 유형 제외"
+    },
+    {
+      "id": "6626ad13-f00f-4b67-be41-c768b9c0a380",
+      "name": "Bullet time",
+      "status": "included",
+      "public_gallery": true,
+      "category": "core",
+      "reference": "effects-core.md#bullet-time",
+      "evidence": "public_detail_text",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "6eab963f-5a31-4f3c-bb23-26ba1d86a49f",
+      "name": "Fairytale castle",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#fairytale-castle",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/fairytale-castle-exported"
+    },
+    {
+      "id": "f6566fe4-418b-46bc-9d13-bd4b19de0ff6",
+      "name": "Comic",
+      "status": "included",
+      "public_gallery": true,
+      "category": "look",
+      "reference": "effects-looks.md#comic",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "d5702ff7-e146-4369-bc84-8816929446ff",
+      "name": "Cold vision",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#cold-vision",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "d4dc70f8-def4-44b0-b507-82ef7c88971d",
+      "name": "Cyclope",
+      "status": "excluded",
+      "public_gallery": true,
+      "reason": "사용자 요청: 그림을 인물로 재현하는 유형 제외"
+    },
+    {
+      "id": "f1f09357-8db4-4932-b598-4b62e962a716",
+      "name": "Particles",
+      "status": "included",
+      "public_gallery": true,
+      "category": "look",
+      "reference": "effects-looks.md#particles",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/particles"
+    },
+    {
+      "id": "ac033a3c-4a91-4340-b19f-c6df281c9e80",
+      "name": "Mighty fighter",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#mighty-fighter",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/mighty-fighter-exported"
+    },
+    {
+      "id": "507b31bc-1eed-4651-880a-3fbafbb1e21e",
+      "name": "Windows",
+      "status": "included",
+      "public_gallery": true,
+      "category": "look",
+      "reference": "effects-looks.md#windows",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/windows"
+    },
+    {
+      "id": "51ce6a8b-3921-466b-b6d5-25816720af11",
+      "name": "Canvas",
+      "status": "included",
+      "public_gallery": true,
+      "category": "look",
+      "reference": "effects-looks.md#canvas",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "e0da05ed-12ae-485b-93ac-939f885f314d",
+      "name": "Pigeons",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#pigeons",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "91506e72-9b2f-474d-ada5-e1b144699b86",
+      "name": "Tracking",
+      "status": "included",
+      "public_gallery": true,
+      "category": "look",
+      "reference": "effects-looks.md#tracking",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/tracking"
+    },
+    {
+      "id": "6551373d-7ad9-4f33-8bb1-9bb7b570cf6e",
+      "name": "Superstar",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#superstar",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/superstar"
+    },
+    {
+      "id": "cbf62edd-296f-493e-b4dc-29bef0a7214c",
+      "name": "Pearl earring",
+      "status": "excluded",
+      "public_gallery": true,
+      "reason": "사용자 요청: 그림을 인물로 재현하는 유형 제외"
+    },
+    {
+      "id": "16ac0b13-2e62-4764-9469-56ff287b6a08",
+      "name": "LSD",
+      "status": "included",
+      "public_gallery": true,
+      "category": "look",
+      "reference": "effects-looks.md#lsd",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "16187c71-9db0-40ae-b1a4-4c2035933068",
+      "name": "Blue depth",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#blue-depth",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "3a4261c7-da21-4879-b4c1-f2516c5cd9be",
+      "name": "Palette",
+      "status": "included",
+      "public_gallery": true,
+      "category": "look",
+      "reference": "effects-looks.md#palette",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/palette"
+    },
+    {
+      "id": "7e2ea896-2c5b-42d8-9992-95ae24cae5cc",
+      "name": "Moonwalk",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#moonwalk",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/moonwalk-exported"
+    },
+    {
+      "id": "18c71d5b-f702-47fd-99c8-ce8392265c70",
+      "name": "Knight's diary",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#knight-s-diary",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "cf29938d-8033-4f25-bfb9-43d6b8c19e07",
+      "name": "Argus",
+      "status": "excluded",
+      "public_gallery": false,
+      "reason": "사용자 요청: 그림을 인물로 재현하는 유형 제외"
+    },
+    {
+      "id": "f41020a7-8f3d-46fa-9ef7-cd966037121d",
+      "name": "Fragments",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#fragments",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "731211fd-ee97-463d-b279-4ca3259a5d29",
+      "name": "2000's paparazzi",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#2000-s-paparazzi",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "e3329ff5-dd6f-4773-aa3d-a1d3fba3cc0d",
+      "name": "Overexposed",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#overexposed",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "b7078c0c-2f92-49d4-a0ff-94aeb9e6f6fd",
+      "name": "Dolphin ride",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#dolphin-ride",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "33f1fe65-287a-4711-ac37-0b88d5a56708",
+      "name": "Sticker peel",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#sticker-peel",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "a8bc6ac3-f47c-40f9-900d-96fc06f20da7",
+      "name": "Multiverse",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#multiverse",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "8107940b-1567-4df5-b5de-617585a25972",
+      "name": "Skatedog",
+      "status": "included",
+      "public_gallery": true,
+      "category": "scene",
+      "reference": "effects-scenes.md#skatedog",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects/examples/skatedog"
+    },
+    {
+      "id": "dfef0d55-b122-4727-aa3d-9fc9ffda976b",
+      "name": "Noir",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#noir",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "57757dbc-7669-4495-b158-3f0104c6c1c1",
+      "name": "Casual monster slayer",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#casual-monster-slayer",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "9ce05278-37ec-4cde-a483-c04868242f77",
+      "name": "Ocean",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#ocean",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "f9547ac5-21a8-4eb0-9312-12b62aec529c",
+      "name": "Selfie twin",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#selfie-twin",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "a6b66c57-2d6b-40cd-9bf3-c4f5dcc276ee",
+      "name": "Sketch",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#sketch",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "526f142a-42ce-4360-a353-ced1c7440234",
+      "name": "Monet muse",
+      "status": "excluded",
+      "public_gallery": false,
+      "reason": "사용자 요청: 그림을 인물로 재현하는 유형 제외"
+    },
+    {
+      "id": "9552b708-eaac-4fc0-ab3a-e9e5dacb4e9a",
+      "name": "Akrill",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#akrill",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "28f715ae-0f20-4e57-87b7-9a856e96621a",
+      "name": "Magazine",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#magazine",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "ccf1e30c-b2b7-4cec-ac06-e20a9745ec41",
+      "name": "Lost in a book",
+      "status": "excluded",
+      "public_gallery": false,
+      "reason": "사용자 요청: 그림을 인물로 재현하는 유형 제외"
+    },
+    {
+      "id": "4e5df49c-a253-494f-b616-20f471f6c518",
+      "name": "Penguin ride",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#penguin-ride",
+      "evidence": "official_preview_10_sampled_frames",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "7ffc5f58-47d0-46f8-b90c-8539f70c3d13",
+      "name": "Cannabis",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#cannabis",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "c18f36af-b7cc-4b9e-b320-8b3b06f25683",
+      "name": "3D render",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#3d-render",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "7608c318-2752-407b-acd6-6fd33732bdbf",
+      "name": "Action figure",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#action-figure",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "ab21d192-ae60-411f-ae52-ddf9cd9fedd5",
+      "name": "Bubbles",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#bubbles",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "0d12822c-e095-43ec-a335-b4d335a897b3",
+      "name": "Orbit 360",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#orbit-360",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "f9fcdd8a-38f2-42fb-9a7d-aa24530e1354",
+      "name": "Orbital presence",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#orbital-presence",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "92e39a66-01a4-4f17-9b86-2ffd8ceaac93",
+      "name": "Acid",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#acid",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "96e1865c-c551-4aae-ad17-bf18447e74a1",
+      "name": "Race track",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#race-track",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "fec762be-6b12-4fb3-92dc-588522ac814f",
+      "name": "Flash comic",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#flash-comic",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "b3629014-bb3a-457d-88e9-448358233878",
+      "name": "Paper",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#paper",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "a036628d-9723-435a-9d24-1060a9ab3699",
+      "name": "Random Glow",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#random-glow",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "27c5dbb2-9411-4c14-a55d-0004d304fcc6",
+      "name": "Toxic",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#toxic",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "536da8e0-dbbc-4990-9bfc-5da9df93ac49",
+      "name": "Broken mirror",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#broken-mirror",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "9b3ff025-252e-40c5-bddb-97513d35c38a",
+      "name": "Hand paint",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#hand-paint",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "3f631876-f34e-499f-87e6-bc9eada94581",
+      "name": "Lava",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#lava",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "ea4f53a8-a265-44ed-8f25-b7ce86da16b9",
+      "name": "Marble",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#marble",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "744ebc4f-b323-47a0-aefe-560663bfe1a7",
+      "name": "Modern",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#modern",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "af906dd9-af11-4a6d-a58e-ff8797e68813",
+      "name": "Puffin ride",
+      "status": "included",
+      "public_gallery": false,
+      "category": "scene",
+      "reference": "effects-scenes.md#puffin-ride",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "35b52620-f7b6-400a-9664-3f93838fe01f",
+      "name": "Origami",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#origami",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "928dd98a-20e4-42f8-8772-0cb5c9a758f9",
+      "name": "Two color",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#two-color",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "be3585f5-8246-4670-87a7-19c750e6da02",
+      "name": "Ultraviolet",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#ultraviolet",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    },
+    {
+      "id": "f9f7c94c-beca-4799-8276-238e54390a9d",
+      "name": "Vintage",
+      "status": "included",
+      "public_gallery": false,
+      "category": "look",
+      "reference": "effects-looks.md#vintage",
+      "evidence": "catalog_description",
+      "source_url": "https://higgsfield.ai/effects"
+    }
+  ]
+}

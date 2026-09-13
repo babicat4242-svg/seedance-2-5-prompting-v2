@@ -19,6 +19,10 @@ description: Use when designing visual effects, surreal transformations, transit
 
 용도별 설계가 필요하면 [영화·광고·뮤직비디오 적용](references/genre-direction.md)을 읽는다. 효과 선택·재구성에는 [효과 라이브러리](references/effect-selection.md)에서 관련 항목만 읽는다.
 
+효과 색인은 핵심 14개·추가 장면 34개·화면 스타일 33개로 구성된다. 그림·명화를 실제 인물로 재현하는 유형은 사용자 요청으로 제외하며 추천하지 않는다. 잉크·종이·색감 등 화면 질감은 유지한다. 스타일의 시간 변화는 새 각색이며 필수가 아니다.
+
+Monster dab은 사람 1장·몬스터 1장의 독립 참조를 기본으로, Scrapbook collage는 인물 외에 배경·원하는 소품의 이미지 또는 설명도 받을 수 있도록 설계한다. 실제 태그별 역할을 보존하며 원본 서비스의 슬롯 수를 범용 연출에 상속하지 않는다. 자세한 구성은 [추가 장면 카드](references/effects-scenes.md)에서 선택한다.
+
 ## 효과를 여섯 요소로 풀기
 
 `시작 상태 → 발동 계기 → 변형 대상·과정 → 카메라 → 도달 상태 → 다음 장면 연결`
