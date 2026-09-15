@@ -9,7 +9,8 @@ Adapt only the structure appropriate to the scene using the main skill's instruc
 - Seedance 2.0 Fast custom profile
 - Revision recompilation pattern
 - Short single-shot pattern
-- 30-second sequence pattern
+- 30-second edited teaser pattern
+- 30-second continuous sequence pattern
 - Image-to-video pattern
 - R2V and white-model pattern
 - Localized edit pattern
@@ -22,8 +23,8 @@ Adapt only the structure appropriate to the scene using the main skill's instruc
 Use this order so the model receives the mode and source jobs before the narrative detail:
 
 ```text
-mode/output → reference-role map → non-negotiables → scene/spatial rules
-→ timestamped subject action → camera plan → lighting/style → audio mode
+mode/output → reference-role map and REF LOCK for each active source → non-negotiables → scene/spatial rules
+→ timestamped subject action → camera plan → lighting/style → audio mode and AUDIO LOCK when an active audio asset exists
 → end state → continuity locks
 ```
 
@@ -88,7 +89,18 @@ Continuity locks: preserve {IDENTITY_TAG}, {WARDROBE_LOCK}, {PROP_LOCK}, {LIGHTI
 
 Load [camera-motion.md](camera-motion.md) when `{PRIMARY_MOVE}`, path clearance, focus behavior, or the distinction between a pan, truck, dolly, orbit, and zoom needs precise language.
 
-## 30-second sequence pattern
+## 30-second edited teaser pattern
+
+Use for a 30-second teaser with requested hard cuts, rapid inserts, an approved storyboard, or a final perspective reversal. Do not inherit the continuous-shot/no-cut defaults of the next pattern. Front-load source hierarchy and conflict priority before detailed timecodes. Give a source controlling look, a source controlling identity, and each storyboard controlling its assigned event/camera/transition evidence. Preserve the user's requested @이미지1-style upload-index labels with a clear order; do not insert retired UUID tags. State the active mystery information and reveal mechanism when the story requires them. Apply the actual microcut timings instead of replacing them with four generic beats; describe common edit/camera rules once, then put the observable subject and frame change in each timecode. End with the image that physically proves the reveal, a deliberate scored/diegetic audio contract, conditional AUDIO LOCK for any active audio asset, and relevant continuity locks. REF LOCK for every active reference stays in the copy-ready prompt, not merely in the outside asset map. Keep the shot count and opening distribution set by the user rather than by this example.
+
+```text
+mode/output and edit tempo → reference jobs, conflict priority, REF LOCK
+→ active mystery/causal rules and spatial sequence → timestamped edited shots
+→ shared camera/edit grammar → scored or other active audio mode, AUDIO LOCK if audio source exists
+→ physical final-frame reveal and continuity locks
+```
+
+## 30-second continuous sequence pattern
 
 Use for a standard continuous scene up to 30 seconds when the visible interface offers that duration. The four beats below are a default; change their timing when the brief demands different beats, action cadence, or synchronization.
 
