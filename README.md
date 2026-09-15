@@ -11,9 +11,9 @@
 | [seedance-2-5-prompting](skills/seedance-2-5-prompting/SKILL.md) | 입력 해석, 레퍼런스 역할, 타임라인, 카메라·음향, 전체 프롬프트 작성·수정 |
 | [seedance-25-cinematic](skills/seedance-25-cinematic/SKILL.md) | 영화 같은 사건·연기·조명·대사·원테이크 연출 |
 | [eyecandy-visual-development](skills/eyecandy-visual-development/SKILL.md) | 장면의 감정과 공간에 맞는 구도·무빙·전환 선택 |
-| [video-effects](skills/video-effects/SKILL.md) | 영화·광고·뮤직비디오용 81개 효과·장면·화면 스타일의 원리, 장면별 추천과 범용 프롬프트 |
+| [video-effects](skills/video-effects/SKILL.md) | 아이캔디 132개와 힉스필드 81개 예시 분석, 뮤직비디오·브랜드필름용 완성 프롬프트 426개 |
 
-GODSTOUCH 액션 카메라, NO-BGM, 스토리·이미지 해석, 2.5 작성법 5팁은 기본 스킬의 참고자료에 포함됩니다. 아이캔디의 장면 연결용 모티프 참고자료도 함께 들어 있어 특정 개인 PC의 HERA 설치 경로에 의존하지 않습니다.
+GODSTOUCH 액션 카메라, NO-BGM, 스토리·이미지 해석, 2.5 작성법 5팁과 [25개 감정 연기 카드](skills/seedance-2-5-prompting/references/emotion-acting-catalog-01-13.md)는 기본 스킬의 참고자료에 포함됩니다. 감정 카드는 원본 영상과 시간순 표본 프레임, 관찰, 씨댄스 2.5용 한국어 연기 문장을 분리합니다. 아이캔디의 장면 연결용 모티프 참고자료도 함께 들어 있어 특정 개인 PC의 HERA 설치 경로에 의존하지 않습니다.
 
 ## v2에서 할 수 있는 일
 
@@ -119,4 +119,4 @@ python skills/eyecandy-visual-development/tests/test_technique_contract.py
 
 ## 자료와 라이선스
 
-스킬 본문에 원자료의 출처와 작성 관찰/공식 사양의 구분을 유지했습니다. 원본 강의 ZIP·PDF·이미지·영상과 개인 작업 파일은 배포에 포함하지 않습니다. 기존 코드·문서의 라이선스 고지는 [LICENSE](LICENSE)에 보존했습니다.
+스킬 본문에 원자료의 출처와 작성 관찰/공식 사양의 구분을 유지했습니다. 원본 강의 ZIP·PDF·전체 영상과 개인 작업 파일은 배포에 포함하지 않습니다. 분석에 사용한 작은 시간순 프레임 시트는 출처와 함께 포함합니다. 기존 코드·문서의 라이선스 고지는 [LICENSE](LICENSE)에 보존했습니다.

@@ -28,6 +28,7 @@ Higgsfield의 [공개 Effects](https://higgsfield.ai/effects)와 아래 상세 �
 [동작 출처](https://higgsfield.ai/effects/examples/eyes-in): 눈동자 안으로 카메라가 들어가 다른 공간으로 연결.
 - 설계: 얼굴에서 한쪽 눈으로 접근 → 홍채가 프레임을 채움 → 동공의 어둠을 통과 → 목적지 공간이 열림.
 - 분리: 눈 안에 비친 영상인지 실제 통과하는 환상 전환인지 정한다. 목적지와 전환 뒤 시점을 구체화한다.
+- 사용자 선호: 화면이 롤 회전하면서 한쪽 눈으로 접근하는 조합을 우선 검토한다. 카메라 롤·전진·초점·목적지의 도착 자세를 분리해 설계한다. 얼굴 자체 회전으로 대체하지 않는다. 상세 설계와 창작 예시는 [연출 안무](directing-choreography.md)를 읽는다. 이 선호는 원본 영상에서 확인한 사실과 구별한다.
 - 핵심 문장: “The camera moves toward one eye until the iris fills the frame, passes through the dark pupil, and emerges into the remembered room.”
 - 제작 보완: 실제 무편집 요구라면 연속된 시각적 통로로 설계한다. 암전 뒤 컷을 쓰는 방식은 편집 대안으로 구분한다.
 

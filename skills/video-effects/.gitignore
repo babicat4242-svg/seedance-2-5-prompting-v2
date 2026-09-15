@@ -1,0 +1,2 @@
+# Extraction records are local staging; cards and coverage.json are canonical.
+references/prompt-library/evidence/higgsfield/*.json

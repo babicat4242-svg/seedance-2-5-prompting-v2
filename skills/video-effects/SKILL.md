@@ -1,11 +1,19 @@
 ---
 name: video-effects
-description: Use when designing visual effects, surreal transformations, transitions, or effect-driven shots for films, commercials, brand films, or music videos; when adapting Higgsfield-style scenes to any video model; or when asked for 영상 이펙트, 효과 연출, 시간 정지, 공간 변형, 분신, 영화·광고·뮤직비디오 장면. Works without a Higgsfield account, plugin, or selected generator.
+description: Use when designing visual effects, camera/framing techniques, lighting and masking looks, animated Eyecandy references, surreal transformations, transitions, or effect-driven shots for films, commercials, brand films, or music videos; when adapting Higgsfield-style scenes to any video model; or when asked for 영상 이펙트, 효과 연출, 시간 정지, 공간 변형, 분신, 영화·광고·뮤직비디오 장면. Works without a Higgsfield account, plugin, or selected generator.
 ---
 
 # 영상 효과 연출 · Video Effects
 
-효과를 영화·광고·뮤직비디오에 쓸 수 있는 장면 언어로 설계한다. Higgsfield Effects는 시각적 발상의 참고 자료이며, 결과물은 어떤 영상 도구에도 전달할 수 있는 완전한 연출·프롬프트다. 기본 작업에는 계정·API·플러그인·실시간 카탈로그 조회가 필요하지 않다.
+아이캔디의 촬영·편집 기법과 힉스필드의 시각 효과를 함께 다루는 공통 진입점이다. 사용자에게는 ‘영상 효과 연출’로 안내하고 출처는 자료 안에서 구분한다. 효과를 영화·브랜드필름·광고·뮤직비디오에 쓸 수 있는 장면 언어로 설계한다. Higgsfield Effects는 시각적 발상의 참고 자료이며, 결과물은 어떤 영상 도구에도 전달할 수 있는 완전한 연출·프롬프트다. 기본 작업에는 계정·API·플러그인·실시간 카탈로그 조회가 필요하지 않다.
+
+## 분석 기반 완성형 프롬프트
+
+바로 적용할 예시가 필요하면 [완성형 프롬프트 모음](references/prompt-library/index.md)에서 관련 효과를 읽는다. 아이캔디 132개와 힉스필드 81개, 총 213개 출처 예시에 원본 미디어·관찰 프레임·분석·뮤직비디오와 브랜드필름용 완성 프롬프트 426개가 있다. 212개는 시간순 표본 프레임, Dreamcore 1개는 정지 원본을 확인했다. 고유 효과 종류 213개나 실제 생성 성공 426건이라는 뜻은 아니다. 장면에 맞게 다시 작성하며 사용자 길이·컷·참조·음향 조건을 보존한다.
+
+## 공통 기법 자료
+
+카메라·구도·조명·전환 또는 아이캔디의 움직이는 예시를 적용할 때는 [기법과 움직이는 예시 적용](references/visual-techniques.md)을 읽는다. 기존 아이캔디 색인·상세 파일을 이 라이브러리의 자료로 사용한다. 이름과 설명을 연결한 것과 각 애니메이션을 실제 분석한 것은 구분한다.
 
 ## 장면부터 선택
 
@@ -22,6 +30,14 @@ description: Use when designing visual effects, surreal transformations, transit
 효과 색인은 핵심 14개·추가 장면 34개·화면 스타일 33개로 구성된다. 그림·명화를 실제 인물로 재현하는 유형은 사용자 요청으로 제외하며 추천하지 않는다. 잉크·종이·색감 등 화면 질감은 유지한다. 스타일의 시간 변화는 새 각색이며 필수가 아니다.
 
 Monster dab은 사람 1장·몬스터 1장의 독립 참조를 기본으로, Scrapbook collage는 인물 외에 배경·원하는 소품의 이미지 또는 설명도 받을 수 있도록 설계한다. 실제 태그별 역할을 보존하며 원본 서비스의 슬롯 수를 범용 연출에 상속하지 않는다. 자세한 구성은 [추가 장면 카드](references/effects-scenes.md)에서 선택한다.
+
+## 장면에 맞는 아이디어
+
+촬영·구도·조명·광학·시간·질감·복제·합성·물성·공간 변형·전환 모두에 [장면별 아이디어 설계](references/visual-techniques.md)를 적용한다. 원본에서 실제 확인한 작동 원리를 장면의 감정·행동·제품·브랜드 톤·퍼포먼스에 맞춰 재설계한다. 원본 소재를 자동으로 복사하거나 모든 효과를 장면 전환으로 만들지 않는다. 사용자가 동일 재현을 명시하면 그 요청을 따른다. 저장된 완성 프롬프트는 각색 예시이며 실제 장면에 맞춰 다시 작성한다.
+
+## 효과와 카메라의 공동 연출
+
+장면·아이디어·완성 프롬프트에는 [연출과 움직임 설계](references/directing-choreography.md)를 적용한다. 관객의 시선, 발동 계기, 주체·카메라·효과의 타이밍, 속도 변화, 도착 구도를 함께 설계한다. Eyes in에서는 사용자 선호인 회전하며 눈으로 접근하는 안을 장면에 맞게 검토한다. 회전+접근 등 역할이 다른 복합 동작을 기계적으로 삭제하지 않고 각각의 축·대상·속도·끝을 정의한다.
 
 ## 효과를 여섯 요소로 풀기
 

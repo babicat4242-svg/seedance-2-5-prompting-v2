@@ -1,0 +1,20 @@
+{
+  "source": "https://asset.eyecannndy.com/media/clip/2023/12/24/261703451266.webp",
+  "frames": 56,
+  "duration_ms": 1680,
+  "sampled_frames": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55
+  ],
+  "method": "12 evenly spaced decoded frames; no audio"
+}

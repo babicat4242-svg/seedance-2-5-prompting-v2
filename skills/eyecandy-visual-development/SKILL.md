@@ -5,6 +5,12 @@ description: Use when directing key visuals, visual development, storyboards, mu
 
 # EYECANDY Visual Development
 
+## Shared entrypoint
+
+The shared [analyzed example library](../video-effects/references/prompt-library/index.md) contains the actual 132 local gallery examples with frame evidence and complete scene prompts. Use the specific card for observed motion; the taxonomy remains a concept index.
+
+User-facing effect direction lives in [영상 효과 연출](../video-effects/SKILL.md). This directory preserves the Eyecandy taxonomy and detailed technique references for that shared library; the source name is not a separate required user workflow. Read only the relevant technique files when the shared library has already selected this branch.
+
 ## What this skill is
 
 A technique-selection and direction-conversion system. It reads a creative brief,
