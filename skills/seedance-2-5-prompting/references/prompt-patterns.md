@@ -24,13 +24,17 @@ Use this order so the model receives the mode and source jobs before the narrati
 
 ```text
 mode/output → reference-role map and REF LOCK for each active source → non-negotiables → scene/spatial rules
-→ timestamped subject action → camera plan → lighting/style → audio mode and AUDIO LOCK when an active audio asset exists
+→ timestamped subject action → camera plan → LIGHTING LOCK / style → audio mode and AUDIO LOCK when an active audio asset exists
 → end state → continuity locks
 ```
 
 For Seedance 2.5, place the focal-length intent and LOCKED OFF or primary move first in the final camera clause, then purpose/start/path/blocking/focus/end. In a source-preserving edit or extension, retain the reference perspective when the actual mm is unknown; do not invent a measured lens value. A continuous shot keeps one primary route by default; timeline phases may continue, slow, settle, or hold that route without adding a new move.
 
 State shared camera and continuity rules once per continuous shot, with only changed values in individual beats. These templates are completeness checks, not instructions to repeat every field or lock. A locked shot needs stable framing and a focus rule, not a travel path or travel speed. Keep subject action and camera action in separate sentences. Duration, timestamps, angles, focal lengths, and speeds are approximate intent unless the current interface exposes a matching control or path reference.
+
+When using a storyboard or contact sheet, include the main skill's FRAME LOCK: preserve the requested output canvas in every shot and recompose the scene content within it; do not inherit panel dimensions, margins, rounded corners, or letterboxing. In-scene screens and mirrors retain their physical borders without changing the outer video frame.
+
+Every complete pattern below requires the main skill's LIGHTING LOCK: identify the lighting source/priority, defining direction and quality, warm/cool relationship, contrast and highlights, and permitted changes across cuts. Select the scene-relevant properties; palette or mood alone cannot replace lighting direction. Preserve reference lighting in source edits and avoid inheriting neutral character-sheet lighting into a concept-art world.
 
 ## Community-derived compacting checks
 
@@ -81,7 +85,7 @@ Non-negotiables: preserve {IDENTITY_TAG}'s identity; no cuts; {ASPECT_OR_OUTPUT}
 Scene/spatial rules: {LOCATION}, with {SPATIAL_ANCHORS}; maintain {GEOMETRY_AND_CLEARANCE}.
 Timestamped subject action: 0–{ACTION_END}s, {SUBJECT} {SUBJECT_ACTION}; {ACTION_END}s–{DURATION}, {SUBJECT} resolves at {SUBJECT_END_POSE}.
 Camera plan: {FOCAL_LENGTH_MM_OR_REFERENCE_PERSPECTIVE}; {PRIMARY_MOVE}. purpose: {CAMERA_PURPOSE}. Start framing: {START_FRAMING}. path/direction: {CAMERA_PATH}; speed profile: {SPEED_PROFILE}. Subject blocking: {SUBJECT_SCREEN_POSITION_AND_ROUTE}. Focus: {FOCUS_RULE}. End framing: {END_FRAMING}. Continuity/edit: one contiguous physical path; no cut.
-Lighting/style: {LIGHTING_AND_STYLE}.
+LIGHTING LOCK / style: {LIGHTING_AND_STYLE}.
 Audio mode: {AUDIO_MODE}; {SOUND_RULE}.
 End state: {FINAL_FRAME}.
 Continuity locks: preserve {IDENTITY_TAG}, {WARDROBE_LOCK}, {PROP_LOCK}, {LIGHTING_LOCK}, and {MOTION_DIRECTION_LOCK} through the final frame.
@@ -96,7 +100,7 @@ Use for a 30-second teaser with requested hard cuts, rapid inserts, an approved 
 ```text
 mode/output and edit tempo → reference jobs, conflict priority, REF LOCK
 → active mystery/causal rules and spatial sequence → timestamped edited shots
-→ shared camera/edit grammar → scored or other active audio mode, AUDIO LOCK if audio source exists
+→ shared camera/edit grammar → LIGHTING LOCK → scored or other active audio mode, AUDIO LOCK if audio source exists
 → physical final-frame reveal and continuity locks
 ```
 
@@ -111,7 +115,7 @@ Non-negotiables: preserve {IDENTITY_TAG}; no cuts; {FORMAT_LOCK}; {SAFETY_OR_CON
 Scene/spatial rules: {START_LOCATION} to {END_LOCATION}; preserve {LANDMARKS}, {TRAVEL_DIRECTION}, and {COLLISION_CLEARANCE}.
 Timestamped subject action: 0–6s setup — {SETUP_ACTION}. 6–14s development — {DEVELOPMENT_ACTION}. 14–24s payoff/action — {PAYOFF_ACTION}. 24–30s resolution — {RESOLUTION_ACTION}.
 Camera plan: {FOCAL_LENGTH_MM_OR_REFERENCE_PERSPECTIVE}; {PRIMARY_MOVE_OR_LOCKED_OFF}. purpose: {CAMERA_PURPOSE}. Start framing: {START_FRAMING}. Route phases of the same primary move: 0–6s {PHASE_1}; 6–14s {PHASE_2}; 14–24s {PHASE_3}; 24–30s {PHASE_4}. Path/direction: {CONTIGUOUS_ROUTE}. Speed profile: {SPEED_PROFILE_BY_BEAT}. Subject blocking: {SUBJECT_ROUTE_AND_SCREEN_RELATION}. Focus: {FOCUS_RULE}. End framing: {END_FRAMING}. Continuity/edit: physically contiguous route; one continuous shot; no cuts.
-Lighting/style: {LIGHTING_AND_STYLE}, continuous across all four beats.
+LIGHTING LOCK / style: {LIGHTING_AND_STYLE}, continuous across all four beats.
 Audio mode: {AUDIO_MODE}; {TIMED_AUDIO_CUES}; no conflicting music/dialogue instruction.
 End state: {FINAL_FRAME}.
 Continuity locks: retain {IDENTITY_TAG}, {COSTUME_AND_PROP_LOCKS}, {TIME_OF_DAY}, {DIRECTION_OF_TRAVEL}, and {FOCUS_TARGET} through the resolution.
@@ -130,7 +134,7 @@ Non-negotiables: begin from {IMAGE_TAG}'s visible composition; preserve {IDENTIT
 Scene/spatial rules: extend only what is implied by {IMAGE_TAG}; preserve {IMAGE_ANCHORS} and {GEOMETRY_AND_CLEARANCE}.
 Timestamped subject action: 0–{MIDPOINT}s, {SUBJECT} {ACTION_1}; {MIDPOINT}s–{DURATION}, {SUBJECT} {ACTION_2_AND_END_POSE}.
 Camera plan: {FOCAL_LENGTH_MM_OR_REFERENCE_PERSPECTIVE}; {PRIMARY_MOVE}. purpose: {CAMERA_PURPOSE}. Start framing: match {IMAGE_TAG} as {START_FRAMING}. path/direction: {CAMERA_PATH}. Speed profile: {SPEED_PROFILE}. Subject blocking: {SUBJECT_SCREEN_POSITION_AND_ROUTE}. Focus: {FOCUS_RULE}. End framing: {END_FRAMING}. Continuity/edit: evolve directly from the opening image; no cuts.
-Lighting/style: continue {IMAGE_TAG}'s {LIGHTING_STYLE_LOCK}.
+LIGHTING LOCK / style: continue {IMAGE_TAG}'s {LIGHTING_STYLE_LOCK}.
 Audio mode: {AUDIO_MODE}; {SOUND_RULE}.
 End state: {FINAL_FRAME}.
 Continuity locks: do not replace or redesign the identity, wardrobe, key props, or initial lighting established by {IMAGE_TAG}.
@@ -149,7 +153,7 @@ Non-negotiables: preserve {IDENTITY_TAG}; do not inherit camera shake or appeara
 Scene/spatial rules: source role: {CAMERA_PATH_TAG} is white-model/previs. Geometry to preserve: {GEOMETRY_ANCHORS}. Path to preserve: {CAMERA_START_STATE} → {PATH_LANDMARKS_AND_DIRECTION} → {CAMERA_END_STATE}. Allowable visual replacement: {REPLACED_MATERIALS_LIGHTING_CHARACTERS_STYLE}. Collision handling: {DOOR_WALL_STAIR_CLEARANCE_OR_HANDOFF}. Final framing: {END_FRAMING_WITH_TARGET_FOCUS_AND_SETTLE}.
 Timestamped subject action: {TIMESTAMPS_AND_ACTOR_ACTION}; actor motion is governed by {ACTOR_REFERENCE_TAG}, not by the camera-path source.
 Camera plan: {FOCAL_LENGTH_MM_OR_REFERENCE_PERSPECTIVE}; {PRIMARY_MOVE}. purpose: {CAMERA_PURPOSE}. Start framing: {START_FRAMING}. Path/direction: follow {CAMERA_PATH_TAG}'s {ROUTE}; speed profile: {SPEED_PROFILE}. Subject blocking: {SUBJECT_ROUTE_AND_SCREEN_RELATION}. Focus: {FOCUS_RULE}. End framing: {END_FRAMING}. Continuity/edit: {ONE_CONTIGUOUS_ROUTE_OR_NAMED_EDIT_BOUNDARY}.
-Lighting/style: {LIGHTING_AND_STYLE}, replacing only the permitted white-model appearance.
+LIGHTING LOCK / style: {LIGHTING_AND_STYLE}, replacing only the permitted white-model appearance.
 Audio mode: {AUDIO_MODE}; {SOUND_RULE}.
 End state: {FINAL_FRAME}.
 Continuity locks: preserve the named geometry, {IDENTITY_TAG}, actor route, camera route, and {EDIT_OR_HANDOFF_LOCK}.
@@ -168,7 +172,7 @@ Non-negotiables: alter only {EDIT_REGION}/{EDIT_VARIABLE}; treat preservation of
 Scene/spatial rules: {EDIT_REGION} stays attached to {SPATIAL_ANCHOR}; retain the source geometry, occlusion order, and clearance.
 Timestamped subject action: {EDIT_START}–{EDIT_END}, change {EDIT_VARIABLE} from {SOURCE_VALUE} to {TARGET_VALUE}; all other subject actions keep their source timing and motion.
 Camera plan: retain {SOURCE_LENS_AND_FOCUS}; retain {SOURCE_CAMERA_MOVE}. purpose: preserve the source shot. Start framing: match {SOURCE_CLIP_TAG} at {EDIT_START}. path/direction: retain {SOURCE_CAMERA_PATH}. Speed profile: retain {SOURCE_SPEED_PROFILE}. Subject blocking: retain {SOURCE_BLOCKING}. End framing: match {SOURCE_CLIP_TAG} at {EDIT_END}. Continuity/edit: localized edit boundary is {EDIT_REGION} only; no global reframe or added cut.
-Lighting/style: retain source lighting/style outside {EDIT_REGION}; match any changed pixels to {SOURCE_LIGHTING_CONDITIONS}.
+LIGHTING LOCK / style: retain source lighting/style outside {EDIT_REGION}; match any changed pixels to {SOURCE_LIGHTING_CONDITIONS}.
 Audio mode: preserve source audio unchanged, including timing and mix.
 End state: source-equivalent frame with only {EDIT_VARIABLE} changed to {TARGET_VALUE}: {FINAL_FRAME}.
 Continuity locks: unaffected motion, timing, composition, lighting, audio, identity, camera behavior, and all regions outside {EDIT_REGION} remain locked.
@@ -187,7 +191,7 @@ Non-negotiables: direct the first frame to match this handoff state as closely a
 Scene/spatial rules: continue from {PREVIOUS_LOCATION_AND_GEOMETRY}; retain {SPATIAL_ANCHORS}, {DIRECTION_OF_TRAVEL}, and {CLEARANCE_RULE}.
 Timestamped subject action: 0–{HANDOFF_SETTLE}s, hold/continue {PREVIOUS_FINAL_POSE_AND_MOTION}; {HANDOFF_SETTLE}s–{DURATION}, {SUBJECT} {NEW_ACTION}; end with {SUBJECT_END_POSE}.
 Camera plan: continue {PREVIOUS_LENS_AND_FOCUS}; {PRIMARY_MOVE_OR_CONTINUATION}. purpose: {CAMERA_PURPOSE}. Start framing: match {PREVIOUS_FINAL_FRAMING} as closely as the active interface permits. Path/direction: {CONTIGUOUS_PATH_FROM_HANDOFF}. Speed profile: {SPEED_PROFILE}. Subject blocking: {SUBJECT_SCREEN_POSITION_AND_ROUTE}. Focus event: {NEW_FOCUS_RULE}. End framing: {END_FRAMING}. Continuity/edit: aim for a visually seamless extension boundary at frame 0; direct no reset, teleport, or new cut, then inspect the join for discontinuity.
-Lighting/style: continue {PREVIOUS_LIGHTING_AND_STYLE}; only {PERMITTED_NEW_LIGHTING_CHANGE} after {CHANGE_TIME}.
+LIGHTING LOCK / style: continue {PREVIOUS_LIGHTING_AND_STYLE}; only {PERMITTED_NEW_LIGHTING_CHANGE} after {CHANGE_TIME}.
 Audio mode: continue {PREVIOUS_AUDIO_MODE}; {NEW_AUDIO_CUE_OR_SILENCE_RULE} without a join pop.
 End state: {FINAL_FRAME}.
 Continuity locks: preserve the previous clip's identity, composition, camera height/direction, lighting, sound bed, and motion direction through the handoff.
@@ -211,7 +215,7 @@ Non-negotiables: preserve @Image1's character identity; one continuous shot with
 Scene/spatial rules: an interior corridor leads to a doorway on the character's left. Keep the corridor walls, doorframe, and door physically continuous; the camera uses clear passage beside and through the doorway and never crosses wall or door geometry.
 Timestamped subject action: 0–4s, the character walks forward down the corridor at the walking pace in @Video1. 4–7s, the character reaches the left-side door, opens it while continuing the forward arrival, and turns naturally through the doorway. 7–12s, the character enters the room, stops inside, and turns enough for a three-quarter face to remain visible.
 Camera plan: 35mm, fixed natural-perspective intent; smooth gimbal follow. purpose: reveal the character's approach, door interaction, and final reaction as one grounded route. Start framing: rear three-quarter medium-full follow, trailing behind the character. Path/direction: follow behind, then make a gentle left-side reveal arc around the character while they keep walking; track alongside the door interaction with clearance from the door edge and frame; pass through the open doorway on the physically available side, then travel forward into the room. The arc is approximately a quarter-turn in intent, not a hard 90-degree control. Speed profile: match the walking pace at a calm, natural speed; decelerate through the doorway; finish with a slow physical push-in at an approximate, restrained pace as the character stops. Subject blocking: retain the character as the continuous focus target; keep their route centered-to-right during the left-side reveal, then retain the three-quarter face after entry. Focus: continuous target focus on the character's face/upper body as it comes into view; no optical zoom and no rack focus. End framing: stable medium close-up, three-quarter face visible, camera level and settled. Continuity/edit: one contiguous physical camera path, no cuts, no geometry crossing.
-Lighting/style: natural corridor-to-room lighting with a coherent exposure transition at the doorway; realistic, grounded cinematic movement.
+LIGHTING LOCK / style: warm overhead corridor practicals form soft downward shadows; neutral window light from camera-left becomes the main source inside the room. Let exposure settle smoothly at the doorway, keep facial highlights controlled and shadow detail readable, and retain each source direction through the final hold.
 Audio mode: diegetic only — natural footsteps during the walk and the door handle/opening sound at the interaction; no BGM, dialogue, or added score.
 End state: clear extension handoff frame — the character is stopped inside the room, three-quarter face visible in a stable medium close-up, the half-open door remains behind them, and the camera is settled.
 Continuity locks: preserve @Image1 identity, walking direction, door position and half-open state, fixed natural perspective, continuous target focus, diegetic sound bed, and one-shot continuity through the final frame.

@@ -47,14 +47,18 @@ For revisions, build the canonical active brief first and apply selection only t
 1. Identify the profile first: Seedance 2.5 or explicit Seedance 2.0 Fast. For a new 2.5 scene, understand the story/images using the input reference before choosing the mode: T2V, I2V, R2V, white-model transfer, extension, or localized edit. Read images rather than inferring their contents from filenames.
 2. Declare the deliverable: duration, aspect/output intent, single-shot or multi-shot, audio mode, and final-frame purpose.
 3. Build an asset-role map. Give every reference one primary role, permitted secondary role if needed, and priority for conflicts. If concept art, a character sheet, and one or more storyboards are present, keep their jobs distinct: the concept art may control world/style, the sheet identity, and each storyboard only its assigned events, shot order, composition, or transitions. Do not merge separate boards into one vague reference or let a board override a user's style lock. In every copy-ready prompt with supplied references, include a concise REF LOCK for each active source: its exact tag, controlled attributes, conflict priority, and untransferred attributes. The asset-role summary outside the prompt cannot replace this lock.
-4. Preserve the actual non-negotiables and select supporting instructions for the scene purpose. Identity, geometry, layout, action order, eyeline, light, screen direction, and audio sync are candidates when relevant, not mandatory additions to every scene.
+4. Preserve the actual non-negotiables and select supporting instructions for the scene purpose. Identity, geometry, layout, action order, eyeline, screen direction, and audio sync are candidates when relevant. An explicit lighting contract is always part of the complete prompt; choose its scene-specific contents through the Lighting lock section.
 5. Divide the duration into readable beats. For a sparsely specified 30-second narrative, 6–8-second beats and a short resolution can be useful defaults. For an explicitly edited teaser, approved storyboard, or requested rapid microcuts, preserve the active shot order and requested timing density; group shared direction once and retain fine timecodes where they carry mystery, action, synchronization, or reveal. Do not turn an edited sequence into a continuous-shot template or stretch opening shots to satisfy a default beat count.
 6. Compile a coherent camera direction across the beats; state shared shot rules once and write changes where they occur. For 2.5, use the EyeCandy scene-selection reference when the camera choice is open or needs repair; translate the selected direction into the camera compiler below, including a deliberate static shot when appropriate.
 7. Write observable subject action and physical state separately from camera movement. For an emotional beat, order the trigger, first visible change, primary face/breath/posture response, and held or released end state using the emotion-acting reference. Use the minimum meaningful body-part/action/count or speed cues; one readable response can be enough. Order contact, force, and object response from the actual starting state.
-8. Add lighting, atmosphere, audio, and output intent only when they affect the shot.
+8. Write a concise LIGHTING LOCK using the assigned lighting/look reference or deliberate scene lighting. Preserve its source direction, quality, color relationship, contrast, highlights, and allowed changes as relevant; a color palette alone is insufficient. Add the selected audio contract and only meaningful atmosphere details.
 9. State desired outcomes positively first. Use concise exclusions for active hard constraints; expand only relevant alternatives for an explicit detailed restriction or observed failure. In an edited mystery, preserve the active reveal logic as causal rules: what the audience learns early, what remains concealed, and what physical image proves the ending. Do not add an explanatory rule or a substitute blackout. Treat camera, focus, playback, editing, and audio separately; scan positive and negative clauses for unwanted specific sound cues.
 10. Draft the copy-ready prompt in the requested language, measure its exact character count, and apply the language fallback below when required.
 11. Validate, then return the final bounded prompt.
+
+## Movie teaser intent
+
+When the user requests a movie/film teaser, preserve that deliverable as the governing genre. Fashion/editorial concept art may define costume, color, set design, composition, and lighting; it does not turn the story into a fashion advertisement or music video. Build the teaser around an unanswered dramatic question, observable clues/reactions, escalating tension, and the user's chosen reveal. Preserve requested rapid microcuts and timing: cinematic does not mean uniformly slow shots. Camera, editing, performance, and score must serve the scene's information and suspense rather than merely display attractive objects.
 
 ## Camera compiler
 
@@ -65,6 +69,10 @@ purpose → start framing → primary move → path/direction → speed → subj
 ```
 
 Use one primary camera move per beat; keep a continuous shot on one primary route by default, with any requested phases physically connected. For 2.5, render the CAMERA clause with the selected focal length and LOCKED OFF or primary move first; keep that focal length within the shot unless an intentional zoom is requested. Distinguish pan from trucking, tilt from pedestal/crane travel, dolly from optical zoom, and camera orbit from subject rotation. Prefer a clean uploaded path or white-model reference over coordinate formulas when precision matters. Use exact numeric camera settings only as soft intent unless a visible control or reference makes them enforceable.
+
+For jump-cut or teleport-like travel, specify the camera's side of the subject, the subject's facing direction, the destination landmark, and the near-to-far or far-to-near order relative to the camera. For rear-view retreat into depth, keep the camera at the entrance behind the subject: near rear view → middle rear view → smaller distant rear view, all facing the far destination. A face appearing on an in-scene screen does not authorize turning the physical actor toward the camera. Do not replace skipped time with bouncing or a new pose unless requested.
+
+Name the moving layer explicitly: subject, camera, or environment. For camera roll, the view rotates around the optical axis while the depicted architecture remains rigid with fixed step/railing connections. A spiral stairwell is existing geometry, not an instruction to morph or twist the building. Describe a swirling impression as camera movement unless physical deformation is the user's active choice.
 
 ## Reference hierarchy
 
@@ -77,6 +85,20 @@ Replace blanket `완전히 참조` language with the source's role, preserved at
 For Seedance 2.5, preserve the user's requested duration. A 10-, 15-, 20-, or 30-second request uses this same workflow. Do not round, pad, or split it into fixed-duration parts unless the user requests segmentation; a verified interface limit must be explained and reconciled with the requested result. Scale the number of beats and the final settle to the actual length. When 30 seconds is requested and that mode is visible, use one complete 30-second generation prompt with the user's one-shot or edited cut policy; do not split it into two legacy 15-second stages. For explicit Seedance 2.0 Fast, use the same director-brief structure, asset-role hierarchy, camera compiler, audio selection, and final-frame contract as 2.5, but compile a custom 15-second timeline with three to five readable beats. Do not shorten Fast prompts by deleting the role map, subject/camera separation, camera start/path/end, audio mode, or final frame. Treat the Fast duration as part of this local authoring profile rather than a platform-wide official claim. Treat 5–180-second extended/long-video paths as Beta/UI-dependent and confirm the active interface before promising them. Give each beat a readable end state and make the final frame usable as a handoff for an extension or repair.
 
 Mark beta, rollout-, account-, region-, or UI-dependent capabilities as qualified. Ask for visible controls or a screenshot when a specific setting determines the result.
+
+## Output frame versus reference layout
+
+Lock the requested output aspect ratio and canvas for the entire clip independently of reference dimensions. A storyboard/contact sheet supplies only its assigned scene content, subject placement, eyeline, camera intent, and cut order; its panel aspect ratio, gutters, captions, rounded corners, or surrounding margins do not define the output frame. For a requested full-frame 16:9 result, explicitly write FRAME LOCK: every shot fills one stable 16:9 canvas edge to edge; recompose the scene for that canvas, with no source-layout inheritance, variable aspect ratio, letterboxing, pillarboxing, or panel borders unless the user requests them. Do not solve this by stretching a panel.
+
+Distinguish the output canvas from objects inside the photographed scene. A CRT, mirror, doorway, or phone may retain its own shape and visible border inside the frame; a CRT reveal does not resize the outer video or introduce external black bars. Movie/cinematic intent does not imply widescreen mattes. When repairing a screenshot with bars, distinguish visible blank regions from a verified change in encoded dimensions; do not claim to have measured the video file without inspecting it.
+
+## Lighting lock
+
+Include a concise LIGHTING LOCK inside every complete generation or edit prompt. A palette, genre label, or generic "cinematic lighting" does not establish how the scene is lit. Use the assigned look/lighting reference and latest user direction to state the defining source and direction, hard/soft quality, warm/cool relationship, contrast and shadow density, skin/material highlights, and exposure continuity that make this scene readable. Use only the relevant qualities; do not invent observed Kelvin, lux, lighting ratios, or equipment. With no lighting reference, deliberately design the lighting from the story and identify it as direction rather than an observed property.
+
+Lock lighting by its source role, not by every attached image: a character sheet's neutral studio light or a storyboard's rough rendering must not replace the assigned concept-art lighting. State which qualities persist across cuts and locations and which motivated changes are allowed. A TV switching on, a door opening, a moving lamp, or an intentional lighting transition may change local illumination at its specified beat; do not contradict that event with a blanket frozen-light ban. For source-preserving edits, explicitly retain the source lighting outside the requested change.
+
+Keep this block during revisions, compression, and language fallback. A complete prompt that has REF LOCK and AUDIO LOCK but lacks LIGHTING LOCK is still incomplete.
 
 ## Audio selection
 
@@ -113,7 +135,7 @@ Write the first draft in the user's requested language. Measure Seedance 2.5 wit
 
 If a draft exceeds its active hard maximum, rewrite the entire prompt code block in concise Simplified Chinese. Translate only the canonical active brief. Preserve every exact active reference tag, timeline, camera path, final frame, and functional constraint, then measure and compress until the active hard maximum is met: 5,000 for 2.5 or 4,000 for Fast. Retain the exact set of active supplied timecode ranges after applying the latest revision; when the user explicitly reorders or retimes beats, retire the old ranges and preserve the new ranges instead. If the user explicitly forbids translation, keep the requested language and compress it instead.
 
-Before compression, remove all retired or superseded instructions and their dependencies. Then compress in this order: redundant style adjectives; repeated continuity locks; duplicated negative clauses; explanatory restatements; then low-priority decorative detail. Preserve active asset roles and priorities, REF LOCK for every active source, AUDIO LOCK for any active audio asset, exact tags, required beats, separate subject and camera action, camera start/path/end, audio mode, final handoff, and every necessary UI-dependent qualification.
+Before compression, remove all retired or superseded instructions and their dependencies. Then compress in this order: redundant style adjectives; repeated continuity locks; duplicated negative clauses; explanatory restatements; then low-priority decorative detail. Preserve active asset roles and priorities, REF LOCK for every active source, LIGHTING LOCK for the scene, AUDIO LOCK for any active audio asset, exact tags, required beats, separate subject and camera action, camera start/path/end, audio mode, final handoff, and every necessary UI-dependent qualification.
 
 Report `프롬프트 길이: {N}/{ACTIVE_LIMIT}자` immediately after the code block, using 5,000 for Seedance 2.5 and 4,000 for Fast. The settings note, length line, asset-role map, rationale, and retry guidance are outside the prompt budget.
 ## Output contract
@@ -133,11 +155,12 @@ Keep exact user tags and avoid unnecessary explanation. For review-only requests
 
 Before returning, verify that the prompt contains:
 
-- A declared mode, duration, and output intent.
+- A declared mode, duration, and output intent, with FRAME LOCK preventing storyboard/source aspect ratios and margins from replacing the requested canvas.
 - Every referenced asset's role and priority, with REF LOCK inside the code block for each active source.
 - A visible subject-action arc, separate from camera action.
 - When emotion is central, a visible trigger-to-response sequence and a readable final expression, gaze, breath, or posture.
 - A camera start state and end state, with one primary move per beat.
+- A LIGHTING LOCK inside the code block with the scene's lighting source/priority, defining light qualities, exposure continuity, and permitted motivated changes.
 - A deliberate audio mode; when an active audio asset exists, an AUDIO LOCK inside the code block with its tag, job, retained properties, sync and conflict priority.
 - A final-frame or handoff description.
 - Qualified wording for every beta/UI-dependent feature.
